@@ -10,6 +10,7 @@ var userdetailRouter=require('./routes/userdetail_router');
 
 app.use(bodyParser.json());
 
+app.use('/',userdetailRouter);
 app.use('/getdata',userdetailRouter);
 app.use('/postdata',userdetailRouter);
 app.use('/deletedata',userdetailRouter);
@@ -24,11 +25,11 @@ mongoose.connect('mongodb+srv://kashishshahr:kashishshahr@cluster0.eeaxm.mongodb
     }
 });
 
-app.listen(3000,err=>{
-    if(!err)
-    {
-        console.log("App is Listening");
-    }else{
-        console.log("App Crashed");
-    }
-});
+// app.listen(3000,err=>{
+//     if(!err)
+//     {
+//         console.log("App is Listening");
+//     }else{
+//         console.log("App Crashed");
+//     }
+// });
