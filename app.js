@@ -25,11 +25,11 @@ mongoose.connect('mongodb+srv://kashishshahr:kashishshahr@cluster0.eeaxm.mongodb
     }
 });
 
-// app.listen(3000,err=>{
-//     if(!err)
-//     {
-//         console.log("App is Listening");
-//     }else{
-//         console.log("App Crashed");
-//     }
-// });
+app.listen(3000,err=>{
+    if(!err)
+    {
+        console.log("App is Listening");
+    }else{
+        console.log("App Crashed");
+    }
+});
