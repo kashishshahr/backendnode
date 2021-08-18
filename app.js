@@ -24,8 +24,8 @@ mongoose.connect('mongodb+srv://kashishshahr:kashishshahr@cluster0.eeaxm.mongodb
         console.log("Database Not Conected");
     }
 });
-
-app.listen(3000,err=>{
+const port=process.env.PORT||3000;
+app.listen(port,err=>{
     if(!err)
     {
         console.log("App is Listening");
